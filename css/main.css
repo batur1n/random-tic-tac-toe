@@ -1,0 +1,32 @@
+h1 {
+  font-family: 'Audiowide', cursive;
+  color: #2B2B2B;
+  margin: 10px 0 0 0;    
+  font-size: 90px;
+  line-height: 70px;
+  text-align: center;
+}
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: auto;
+}
+.cell {
+  font-family: 'Audiowide', cursive;
+  color: #3D3D3D;
+  text-align: center;
+  font-size: 150px;
+  height: 200px;
+  width: 200px;
+}
+.content-area {
+  text-align: center;
+  padding: 10px;
+}
+.sample-show-hide {
+  transition: ease-in 1s;
+}
+.sample-show-hide.ng-hide {
+  opacity: 0;
+}
