@@ -2,18 +2,18 @@
 <html>
 
   <head>
-  	<link href="css/main.css" rel="stylesheet" /> 
+  	<link href="css/main.css" rel="stylesheet" />
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 
-    <title>Tic-Tac-Toe</title>
+    <title>Random Tic-Tac-Toe</title>
   </head>
 
   <body ng-app="tictactoe">
-    <h1>Tic-Tac-Toe</h1>
+    <h1>Random Tic-Tac-Toe</h1>
     <p style="text-align:center">(You play with <strong>X</strong>, opponent AI plays with <strong>O</strong>)</p>
-    <div ng-controller="appCtrl"> 
+    <div ng-controller="appCtrl">
       <table id="field">
 		<tr ng-repeat="x in dimensions">
 	  	  <td id="{{$parent.$id+'-'+$index}}" class="cell" ng-repeat="y in dimensions" ng-click="putMark($parent.$id+'-'+$index)"><!--{{$parent.$id+'-'+$index}}--></td>
@@ -22,9 +22,9 @@
       <div class=buttons style="text-align:center; margin:15px 0 0 0">
     	<button style="font-size:30px" ng-click="reloadPage()">NEW GAME</button>
   	  </div>
-      <!--<p>{{board}}</p>	
+      <!--<p>{{board}}</p>
       <p>{{choices}}</p> -->
-  	  <p id="popup" class="content-area sample-show-hide" ng-show="matchResult">{{message}}</p> 
+  	  <p id="popup" class="content-area sample-show-hide" ng-show="matchResult">{{message}}</p>
     </div>
 
     <script src="js/appTicTacToe.js"></script>

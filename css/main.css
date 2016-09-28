@@ -1,7 +1,7 @@
 h1 {
   font-family: cursive;
   color: #2B2B2B;
-  margin: 10px 0 0 0;    
+  margin: 10px 0 0 0;
   font-size: 90px;
   line-height: 70px;
   text-align: center;
@@ -29,4 +29,5 @@ table, th , td  {
 }
 .sample-show-hide.ng-hide {
   opacity: 0;
+  font-size: 0px;
 }
